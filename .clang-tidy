@@ -1,0 +1,32 @@
+Checks: "*,
+        -abseil-*,
+        -altera-*,
+        -android-*,
+        -fuchsia-*,
+        -google-*,
+        -llvm*,
+        -zircon-*,
+        -modernize-deprecated-headers,
+        -modernize-avoid-c-arrays,
+        -hicpp-deprecated-headers,
+        -hicpp-no-assembler,
+        -hicpp-avoid-c-arrays,
+        -readability-identifier-length,
+        -readability-magic-numbers,
+        -cppcoreguidelines-avoid-non-const-global-variables,
+        -cppcoreguidelines-avoid-magic-numbers,
+        -cppcoreguidelines-pro-type-reinterpret-cast,
+        -cppcoreguidelines-avoid-c-arrays,
+        -bugprone-easily-swappable-parameters,
+        -clang-diagnostic-unknown-attributes
+"
+
+WarningsAsErrors: '*'
+HeaderFilterRegex: ''
+FormatStyle: none
+
+CheckOptions:
+  - key: cppcoreguidelines-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+    value: true
+  - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+    value: true
